@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HOMESTAY RUMAH BENJAMIN ANGKI & KOPERASI HOMESTAY RH. BENJAMIN ANGKI KANOWIT BERHAD RANTAU KEMIDING,KANOWIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-title">
+        HOMESTAY RUMAH BENJAMIN ANGKI • RANTAU KEMIDING, KANOWIT
+      </div>
+      <div class="brand-sub">
+        Koperasi Homestay RH. Benjamin Angki Kanowit Berhad • Authentic Iban longhouse experience in rural Sarawak.
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+    <!-- TOP BANNER IMAGE -->
+  <div class="hero-banner">
+    <!-- change the src to your actual banner file -->
+    <img src="images/scene2.jpg"
+         alt="Homestay Rantau Kemiding Kanowit – river and longhouse view">
+  </div>
+  <!-- HERO / FRONT PAGE -->
+  <section id="home" class="hero">
+    <div>
+      <h1 class="hero-title animate delay-2">
+        🌿 Homestay Rantau Kemiding Kanowit
+      </h1>
+      <p class="hero-sub animate delay-3">
+        Experience nature, culture & tranquility in the heart of Kanowit, Sarawak.
+        Escape the noise and reconnect with nature through authentic local experiences.
+        Discover the beauty of rural Sarawak through warm hospitality, rich cultural
+        traditions, and outdoor adventures.
+      </p>
+
+      <div class="hero-highlights animate delay-4">
+        <div class="pill">
+          <span>🏡</span><span>Cozy village stay from RM60 / night</span>
+        </div>
+        <div class="pill">
+          <span>🛶</span><span>River activities • Kayak • Cruising</span>
+        </div>
+        <div class="pill">
+          <span>🦐</span><span>Blue claw freshwater prawn fishing</span>
+        </div>
+        <div class="pill">
+          <span>🎭</span><span>Cultural dances & longhouse stories</span>
+        </div>
+      </div>
+
+      <div class="hero-cta animate delay-4">
+        <a href="https://wa.me/601110615193?text=Hi%20Encik%20Frank%2C%20saya%20ingin%20bertanya%20tentang%20Homestay%20Rantau%20Kemiding." class="btn-primary" target="_blank" rel="noopener">
+          Chat via WhatsApp
+          <span>→</span>
+        </a>
+        <a href="#packages" class="btn-ghost">
+          View Packages (EN / MY)
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card animate delay-3">
+      <div class="hero-card-inner">
+        <h3>Stay • Nature • River</h3>
+        <p class="small">
+          Simple pricing for an unforgettable experience surrounded by lush greenery, river life, and Iban culture.
+        </p>
+
+        <div class="price-grid">
+          <div class="price-row">
+            <div class="price-label">
+              <span>🏡 Accommodation</span>
+              <span>Comfortable longhouse-style stay • Meals not included</span>
+            </div>
+            <div class="price-tag">RM60<span>/night (1 pax)</span></div>
+          </div>
+          <div class="price-row">
+            <div class="price-label">
+              <span>⛺ Camping by the River</span>
+              <span>Weekend only • Sleep under the stars • Meals not included</span>
+            </div>
+            <div class="price-tag">RM50<span>/pax</span></div>
+          </div>
+          <div class="price-row">
+            <div class="price-label">
+              <span>🚤 UpRiver Cruising</span>
+              <span>Local boat • Max 5 passengers (incl. skipper)</span>
+            </div>
+            <div class="price-tag">RM250<span>/hour</span></div>
+          </div>
+          <div class="price-row">
+            <div class="price-label">
+              <span>🛶 Kayaking Adventure</span>
+              <span>Calm waters • Scenic river surroundings</span>
+            </div>
+            <div class="price-tag">RM10<span>/hour (per pax)</span></div>
+          </div>
+        </div>
+
+        <p class="hero-note">
+          ⓘ UpRiver cruising price may vary depending on distance covered.  
+          Camping available on weekends only. Meals are not included unless stated in package.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (SLIDESHOW) -->
+<section id="gallery" class="gallery">
+  <h2 class="section-title">Photo Gallery</h2>
+  <p class="section-sub">
+    A glimpse of village life, the longhouse, river scenery and activities at Homestay Rantau Kemiding Kanowit.
+  </p>
+
+  <div class="slideshow">
+    <!-- Slides will be injected here dynamically -->
+    <div class="slides" id="gallery-slides"></div>
+
+    <button class="slide-nav prev" aria-label="Previous photo">‹</button>
+    <button class="slide-nav next" aria-label="Next photo">›</button>
+
+    <!-- Dots will also be injected dynamically -->
+    <div class="slide-dots" id="gallery-dots"></div>
+  </div>
+</section>
+
+
+  <!-- PACKAGES (DUAL LANGUAGE WITH TOGGLE) -->
+  <section id="packages">
+    <h2 class="section-title">Homestay & Activity Packages</h2>
+    <p class="section-sub">
+      Choose from flexible stays, river activities, and special group packages.
+      Switch between English and Bahasa Malaysia below.
+    </p>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en">English (EN)</button>
+      <button class="lang-btn" data-lang="my">Bahasa Malaysia (MY)</button>
+    </div>
+
+    <div class="packages-container">
+      <!-- ENGLISH -->
+      <div class="lang-section lang-en">
+        <div class="cards-grid">
+          <!-- English Homestay Packages -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🏡</span><span>Homestay Packages (Minimum 15 pax per group)</span>
+            </div>
+            <h3>Daily Package</h3>
+            <div class="price">RM80 per pax</div>
+            <div class="meta">Minimum 15 participants per group</div>
+            <ul>
+              <li>Welcoming drinks</li>
+              <li>Cultural dance performance</li>
+              <li>Meals and beverages</li>
+              <li>Longhouse tour &amp; story-sharing session</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">
+              <span>🌄</span><span>2 Days / 1 Night Package</span>
+            </div>
+            <h3>2D1N Homestay Experience</h3>
+            <div class="price">RM150 per pax per night</div>
+            <div class="meta">
+              Includes accommodation, meals & cultural activities
+            </div>
+            <ul>
+              <li><strong>Day 1</strong> – Welcoming drinks, cultural dance performance, accommodation, meals & beverages, longhouse tour & story-sharing session</li>
+              <li><strong>Day 2</strong> – Blowpipe demonstration, handicraft making, traditional indoor games</li>
+            </ul>
+          </article>
+
+          <!-- English Prawn Fishing Package -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🦐</span><span>Freshwater Prawn (Blue Claw) Fishing Package</span>
+            </div>
+            <h3>2 Days / 1 Night Fishing Adventure</h3>
+            <div class="price">RM350 per person</div>
+            <div class="meta">
+              Minimum 9 pax • Available April – Mid May
+            </div>
+            <ul>
+              <li>Freshwater Prawn (Blue Claw) fishing</li>
+              <li>Cultural performances or karaoke</li>
+              <li>“Cook Your Catch” experience</li>
+              <li>Comfortable longhouse stay</li>
+              <li>Includes meals (Breakfast, Lunch, Dinner) & boat rental</li>
+              <li><span style="color:var(--danger);">Excludes boat petrol</span></li>
+            </ul>
+          </article>
+
+          <!-- English Optional Activities -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🎯</span><span>Optional Activities (Upon Request)</span>
+            </div>
+            <h3>Optional Add-On Experiences</h3>
+            <div class="meta">Perfect for groups looking for more adventure & culture</div>
+            <ul>
+              <li>Fishing safari</li>
+              <li>Ranyai &amp; Bertaboh session</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- BAHASA MALAYSIA -->
+      <div class="lang-section lang-my" style="display:none;">
+        <div class="cards-grid">
+          <!-- BM Homestay Packages -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🏡</span><span>Pakej Homestay (Minimum 15 orang satu kumpulan)</span>
+            </div>
+            <h3>Pakej Harian</h3>
+            <div class="price">RM80 seorang</div>
+            <div class="meta">Minimum 15 orang satu kumpulan</div>
+            <ul>
+              <li>Minuman alu-aluan</li>
+              <li>Persembahan tarian budaya</li>
+              <li>Makanan dan minuman</li>
+              <li>Lawatan rumah panjang &amp; sesi perkongsian cerita</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">
+              <span>🌄</span><span>Pakej 2 Hari 1 Malam</span>
+            </div>
+            <h3>Pakej 2H1M Homestay</h3>
+            <div class="price">RM150 seorang untuk satu malam</div>
+            <div class="meta">
+              Termasuk penginapan, makanan & aktiviti budaya
+            </div>
+            <ul>
+              <li><strong>Hari 1</strong> – Minuman alu-aluan, persembahan tarian budaya, penginapan, makanan dan minuman, lawatan rumah panjang & sesi perkongsian cerita</li>
+              <li><strong>Hari 2</strong> – Demonstrasi sumpit, aktiviti membuat kraftangan, permainan tradisional dalaman</li>
+            </ul>
+          </article>
+
+          <!-- BM Prawn Fishing -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🦐</span><span>Pakej Memancing Udang Galah</span>
+            </div>
+            <h3>2 Hari / 1 Malam Penuh Pengalaman</h3>
+            <div class="price">RM350 seorang</div>
+            <div class="meta">
+              Minimum 9 orang • Tempoh: April – Pertengahan Mei
+            </div>
+            <ul>
+              <li>Memancing Udang Galah</li>
+              <li>Persembahan budaya atau karaoke</li>
+              <li>Aktiviti “Masak Hasil Tangkapan”</li>
+              <li>Penginapan selesa di rumah panjang</li>
+              <li>Termasuk makanan (sarapan, tengah hari, malam) & sewa bot</li>
+              <li><span style="color:var(--danger);">Tidak termasuk: petrol bot</span></li>
+            </ul>
+          </article>
+
+          <!-- BM Optional Activities -->
+          <article class="card">
+            <div class="card-tag">
+              <span>🎯</span><span>Aktiviti Pilihan (atas permintaan)</span>
+            </div>
+            <h3>Aktiviti Tambahan</h3>
+            <div class="meta">Boleh ditambah mengikut permintaan kumpulan</div>
+            <ul>
+              <li>Safari memancing</li>
+              <li>Sesi Ranyai &amp; Bertaboh</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TAB CONTENT -->
+  <section id="about">
+    <h2 class="section-title">About Homestay Rumah Benjamin Angki & Koperasi</h2>
+    <p class="section-sub">
+      Officially recognised homestay with years of experience, training and community involvement in Rantau Kemiding, Kanowit.
+    </p>
+
+    <div class="about-box">
+      <h3>Homestay & Koperasi Background</h3>
+      <p>
+        <strong>HOMESTAY RUMAH BENJAMIN ANGKI</strong> : APPROVED 8.02.2011  
+        <br>
+        <strong>KOPERASI HOMESTAY RH BENJAMIN ANGKI KANOWIT BERHAD</strong> Q-3-0991, 4.12.2012
+      </p>
+      <ul>
+        <li>Homestay Operators Course 2009/2010</li>
+        <li>House/Room/Facilities inspection by MOT/MOTAC and relevant government agencies 2010</li>
+        <li>Homestay approval by MOT/MOTAC 08 February 2011</li>
+        <li>2017 – Seven new homestay operators approved (Total operators to date: 21)</li>
+        <li>KOPERASI HOMESTAY RH BENJAMIN ANGKI registered 4.12.2012 by SKM</li>
+        <li>Up to October 2018: 76 members, out of which 31 are heads of households</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Location & Contact</h2>
+    <p class="section-sub">
+      Reach out to us to plan your next getaway, school trip, family gathering, or cultural experience in Kanowit, Sarawak.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📍 Location</h3>
+        <div class="contact-row">
+          Homestay Rantau Kemiding Kanowit, Sarawak  
+          <br>(formerly known as Homestay Rumah Benjamin Angki)
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>📞 Contact Person</h3>
+        <div class="contact-row">
+          <span class="label">Name</span>
+          Homestay Contact Person:<strong> Mr. Frank Klukoh</strong>
+        </div>
+        <div class="contact-row">
+          <span class="label">Phone</span>
+          <a href="tel:+601110615193">+60 11-10615193</a>
+        </div>
+        <div class="contact-row">
+          <span class="label">Email</span>
+          <a href="mailto:fklukoh@gmail.com">fklukoh@gmail.com</a>
+        </div>
+        <div class="contact-row" style="margin-top:6px;">
+          <a href="https://wa.me/601110615193?text=Hi%20Encik%20Frank%2C%20saya%20ingin%20bertanya%20tentang%20Homestay%20Rantau%20Kemiding." target="_blank" rel="noopener">
+            💬 Click here to open WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Homestay Rumah Benjamin Angki &amp; Koperasi Homestay RH. Benjamin Angki Kanowit Berhad • Rantau Kemiding, Kanowit, Sarawak
+  </footer>
+</main>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/601110615193?text=Hi%20Encik%20Frank%2C%20saya%20berminat%20dengan%20pakej%20Homestay%20Rantau%20Kemiding."
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat on WhatsApp with Homestay Rantau Kemiding">
+  <!-- Simple WhatsApp SVG icon -->
+  <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16.04 3C9.42 3 4 8.42 4 15.04c0 2.65.87 5.1 2.36 7.1L4 29l7-2.29a11.94 11.94 0 0 0 5.04 1.12c6.62 0 12.04-5.42 12.04-12.04C28.08 8.42 22.66 3 16.04 3zm0 21.44c-1.7 0-3.36-.45-4.82-1.31l-.35-.2-4.15 1.36 1.36-4.05-.22-.36a8.55 8.55 0 0 1-1.33-4.56c0-4.76 3.87-8.63 8.63-8.63 4.76 0 8.63 3.87 8.63 8.63 0 4.76-3.87 8.63-8.63 8.63zm4.73-6.3c-.26-.13-1.53-.76-1.77-.85-.24-.09-.42-.13-.6.13-.18.26-.69.85-.85 1.03-.16.18-.31.2-.57.07-.26-.13-1.09-.4-2.07-1.28-.77-.69-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.11-.11.26-.29.4-.44.13-.15.18-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.16 0-.33-.02-.51-.02-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.19 0 1.29.95 2.54 1.08 2.71.13.18 1.88 2.87 4.56 4.02 2.68 1.15 2.68.77 3.16.72.48-.04 1.53-.62 1.75-1.24.22-.62.22-1.15.16-1.24-.07-.09-.24-.16-.51-.29z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
