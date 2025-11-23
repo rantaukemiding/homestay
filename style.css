@@ -129,7 +129,7 @@ nav a:hover{
   display:block;
   width:100%;
   height:auto;
-  max-height:180px;          /* control height, adjust if you want taller/shorter */
+  max-height:210px;          /* control height, adjust if you want taller/shorter */
   object-fit:cover;          /* nicely crops wide photos */
 }
 
@@ -758,3 +758,4 @@ footer{
     align-items:flex-start;
   }
 }
+
